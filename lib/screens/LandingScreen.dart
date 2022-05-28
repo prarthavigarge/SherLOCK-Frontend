@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sherlock_frontend/components/SherLOCK.dart';
+import 'package:sherlock_frontend/screens/InstructionsScreen.dart';
 
 
 class LandingScreen extends StatelessWidget {
@@ -27,6 +28,12 @@ class LandingScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 80.0),
                 child: TextButton(
                   onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => InstructionsScreen(),
+                      ),
+                    );
                   },
                   child: Text(
                     'Get Started',

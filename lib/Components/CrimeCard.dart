@@ -5,6 +5,7 @@ class CrimeCard extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
+    // This Component contains the crime in rounded rectangular boxes
     return Padding(
       padding: const EdgeInsets.all(5.0),
       child: Container(

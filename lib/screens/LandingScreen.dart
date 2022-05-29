@@ -17,13 +17,15 @@ class LandingScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
+              // logo
               Image.asset(
                 'assets/logo.png',
                 width: 200,
                 height: 200,
               ),
               SizedBox(height: 20),
-              SherLOCKText(),
+              SherLOCKText(), // styled product name
+              // Button to proceed to the instructions screen
               Padding(
                 padding: const EdgeInsets.only(top: 80.0),
                 child: TextButton(

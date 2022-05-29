@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// contains styled name of the app
 class SherLOCKText extends StatelessWidget {
   const SherLOCKText({Key? key}) : super(key: key);
 

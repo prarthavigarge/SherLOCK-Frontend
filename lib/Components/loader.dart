@@ -11,6 +11,7 @@ class Loader extends StatefulWidget {
 
 class _LoaderState extends State<Loader> {
   Timer? t;
+  // messages to iterate through
   List<String> messages = [
     "Scanning the face",
     "Trying to find a match",
@@ -20,6 +21,7 @@ class _LoaderState extends State<Loader> {
   @override
   void initState() {
     super.initState();
+    // Timer which changes the displayed message every second
     t = Timer.periodic(Duration(seconds: 1), (Timer t) {
       setState(() {
         messageIndex = (messageIndex + 1) % messages.length;
@@ -35,6 +37,7 @@ class _LoaderState extends State<Loader> {
 
   @override
   Widget build(BuildContext context) {
+    // Will Pop Scope doesnt allow the user to go back via button press when loader is on
     return WillPopScope(
       onWillPop: () async {
         return false;

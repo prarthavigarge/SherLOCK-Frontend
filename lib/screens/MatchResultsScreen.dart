@@ -5,14 +5,18 @@ import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:sherlock_frontend/components/CrimeCard.dart';
 import 'package:sherlock_frontend/screens/InstructionsScreen.dart';
 
+// This screen shows the results from the backend
+// Whether the match was success (Criminal was found)
+// Or whether the person had no match to the criminal database
+
 class MatchResultsScreen extends StatefulWidget {
   MatchResultsScreen(
       {Key? key, required this.match, this.image, this.criminal, this.uploaded})
       : super(key: key);
-  final match;
-  final image;
-  final criminal;
-  final uploaded;
+  final match; // success or failure
+  final image; // criminal database image
+  final criminal; // details like crimes and dangerLevel
+  final uploaded; // Uploaded image
 
   @override
   State<MatchResultsScreen> createState() => _MatchResultsScreenState();
@@ -27,18 +31,24 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
     super.initState();
     success = widget.match;
     if (success) {
+      // Creating a list of widgets to display the crimes
       for (var crime in widget.criminal['crimes']) {
         crimes.add(CrimeCard(
           title: crime,
         ));
       }
+      // Setting the color of danger
       var danger = widget.criminal['dangerLevel'];
+      // if danger <= 25
       if (danger <= 25) {
         color = Colors.yellow;
+        // if danger <= 50
       } else if (danger <= 50) {
         color = Colors.orange;
+        // if danger <= 75
       } else if (danger <= 75) {
         color = Colors.orange[900];
+        // if danger > 75
       } else {
         color = Colors.red[700];
       }
@@ -49,7 +59,7 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: success
-          ? null
+          ? null // Try again button is hidden if the match was a success
           : Container(
               width: MediaQuery.of(context).size.width * 0.8,
               height: 85,
@@ -79,6 +89,7 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
                   )),
             ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      // Back Button
       appBar: AppBar(
           backgroundColor: Colors.grey[800],
           elevation: 0,
@@ -89,7 +100,7 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
             },
           )),
       body: !success
-          ? FailedMatchScreen()
+          ? FailedMatchScreen() // Failed Match Screen is showed if there was no match, the screen is defined below
           : Container(
               width: MediaQuery.of(context).size.width,
               color: Colors.grey[800],
@@ -109,6 +120,7 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
                     child: SizedBox(
                       height: MediaQuery.of(context).size.height * 0.35,
                       child:
+                      // Horizontal scrolling to compare the images
                           ListView(scrollDirection: Axis.horizontal, children: [
                         Center(
                           child: SizedBox(
@@ -124,6 +136,7 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 30.0),
+                                    // CircularPercentIndicator visualizes the percentage of danger around the image
                                     child: CircularPercentIndicator(
                                       radius:
                                           MediaQuery.of(context).size.width *
@@ -133,6 +146,7 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
                                       progressColor: color,
                                       percent:
                                           widget.criminal['dangerLevel'] / 100,
+                                      // CircleAvatar is used to display circular image
                                       center: CircleAvatar(
                                         radius:
                                             MediaQuery.of(context).size.width *
@@ -159,6 +173,7 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 30.0),
+                                    // CircularPercentIndicator visualizes the percentage of danger around the image
                                     child: CircularPercentIndicator(
                                       radius:
                                           MediaQuery.of(context).size.width *
@@ -168,6 +183,7 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
                                           widget.criminal['dangerLevel'] / 100,
                                       backgroundColor: Colors.grey[800]!,
                                       progressColor: color,
+                                      // CircleAvatar is used to display circular image
                                       center: CircleAvatar(
                                         radius:
                                             MediaQuery.of(context).size.width *
@@ -190,12 +206,14 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
                           style: TextStyle(color: Colors.white)),
                     ),
                   ),
+                  // danger level shown in apt color
                   Center(
                       child: Text(
                           'Danger Level: ' +
                               widget.criminal['dangerLevel'].toString() +
                               "%",
                           style: TextStyle(color: color))),
+                  // list of crimes committed in rounded rectangular boxes
                   Center(
                     child: Padding(
                       padding: const EdgeInsets.all(18.0),
@@ -203,6 +221,7 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
                           style: TextStyle(color: Colors.white, fontSize: 18)),
                     ),
                   ),
+                  // Wrap is used to shift widgets to the next line immediately, if no space is left
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15.0),
                     child: Wrap(
@@ -216,6 +235,7 @@ class _MatchResultsScreenState extends State<MatchResultsScreen> {
   }
 }
 
+// When match is not found
 class FailedMatchScreen extends StatelessWidget {
   const FailedMatchScreen({Key? key}) : super(key: key);
 

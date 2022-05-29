@@ -38,21 +38,27 @@ Instructions Page
  <img align="center" src="https://user-images.githubusercontent.com/78611945/170862760-5d6093a3-8858-416d-8ce2-97838f3c4866.png" height="400">
 
 Upload a picture of the suspect
+
  <img align="center" src="https://user-images.githubusercontent.com/78611945/170862999-52b7ac39-ab6f-47a6-8ac2-cd3a9a84313c.png" height="400">
 
 Loader
+
  <img align="center" src="https://user-images.githubusercontent.com/78611945/170863008-7c493d27-e8ee-4102-ac4c-3f020bd58cce.png" height="400">
 
 Match Found
+
  <img align="center" src="https://user-images.githubusercontent.com/78611945/170863013-992cb095-e38d-450d-8765-550015a4cbda.png" height="400">
 
 User manual verification by viewing uploaded image
+
  <img align="center" src="https://user-images.githubusercontent.com/78611945/170863019-e227000b-13af-4502-8d5a-9afad0c55d47.png" height="400">
 
 Another suspect image upload
+
  <img align="center" src="https://user-images.githubusercontent.com/78611945/170863024-bfac2695-497a-4360-88b7-b61c3a5fd500.png" height="400">
 
 Match not found in our database
+
  <img align="center" src="https://user-images.githubusercontent.com/78611945/170863027-96eb5d73-65a1-4a93-8fd6-cf46a110dadb.png" height="400">
 
 

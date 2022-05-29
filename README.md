@@ -22,13 +22,14 @@ Our app idea helps women scan the or upload the picture of a suspect and tells b
 
 ## Important Links
 
-Design File Link: https://www.figma.com/file/jPIayLBgMEy99lz8AjVyuq/sherLOCK?node-id=0%3A1
-sherLOCK Backend: https://github.com/prarthavigarge/SherLOCK-backend.git
-Face Recognition API used: https://www.npmjs.com/package/@vladmandic/face-api 
-                           (uses Tensorflow/JS)
+1) Design File Link: https://www.figma.com/file/jPIayLBgMEy99lz8AjVyuq/sherLOCK?node-id=0%3A1
+2) sherLOCK Backend: https://github.com/prarthavigarge/SherLOCK-backend.git
+3) Face Recognition API used: https://www.npmjs.com/package/@vladmandic/face-api 
+                                (uses Tensorflow/JS)
 ## Screenshots
 Landing screen 
-![image](https://user-images.githubusercontent.com/78611945/170862742-2d17a478-e241-4f7f-8023-20d6f68c1ff1.png)
+![image](https://user-images.githubusercontent.com/78611945/170863186-99a41622-563a-4a38-ae30-a9215976a9af.png)
+
 
 Instructions Page
 ![image](https://user-images.githubusercontent.com/78611945/170862750-6fb4289b-5d95-452e-bd7c-cdf67ff7b708.png)

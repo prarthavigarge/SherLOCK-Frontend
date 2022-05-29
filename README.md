@@ -28,7 +28,7 @@ Our app idea helps women scan the or upload the picture of a suspect and tells b
                                 (uses Tensorflow/JS)
 ## Screenshots
 Landing screen 
-<img src="[https://github.com/favicon.ico](https://user-images.githubusercontent.com/78611945/170863186-99a41622-563a-4a38-ae30-a9215976a9af.png)" height="100">
+<img src="https://github.com/favicon.ico](https://user-images.githubusercontent.com/78611945/170863186-99a41622-563a-4a38-ae30-a9215976a9af.png" height="100">
 
 Instructions Page
 ![image](https://user-images.githubusercontent.com/78611945/170862750-6fb4289b-5d95-452e-bd7c-cdf67ff7b708.png)

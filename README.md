@@ -29,30 +29,31 @@ Our app idea helps women scan the or upload the picture of a suspect and tells b
 ## Screenshots
 Landing screen 
  
- <img src="https://user-images.githubusercontent.com/78611945/170863282-224497b5-9f81-4cdc-87a7-3b6ede7c9c41.png" height="400">
+ <img align="center" src="https://user-images.githubusercontent.com/78611945/170863282-224497b5-9f81-4cdc-87a7-3b6ede7c9c41.png" height="400">
 
 Instructions Page
-![image](https://user-images.githubusercontent.com/78611945/170862750-6fb4289b-5d95-452e-bd7c-cdf67ff7b708.png)
 
-![image](https://user-images.githubusercontent.com/78611945/170862760-5d6093a3-8858-416d-8ce2-97838f3c4866.png)
+ <img align="center" src="https://user-images.githubusercontent.com/78611945/170862750-6fb4289b-5d95-452e-bd7c-cdf67ff7b708.png" height="400">
+
+ <img align="center" src="https://user-images.githubusercontent.com/78611945/170862760-5d6093a3-8858-416d-8ce2-97838f3c4866.png" height="400">
 
 Upload a picture of the suspect
-![image](https://user-images.githubusercontent.com/78611945/170862999-52b7ac39-ab6f-47a6-8ac2-cd3a9a84313c.png)
+ <img align="center" src="https://user-images.githubusercontent.com/78611945/170862999-52b7ac39-ab6f-47a6-8ac2-cd3a9a84313c.png" height="400">
 
 Loader
-![image](https://user-images.githubusercontent.com/78611945/170863008-7c493d27-e8ee-4102-ac4c-3f020bd58cce.png)
+ <img align="center" src="https://user-images.githubusercontent.com/78611945/170863008-7c493d27-e8ee-4102-ac4c-3f020bd58cce.png" height="400">
 
 Match Found
-![image](https://user-images.githubusercontent.com/78611945/170863013-992cb095-e38d-450d-8765-550015a4cbda.png)
+ <img align="center" src="https://user-images.githubusercontent.com/78611945/170863013-992cb095-e38d-450d-8765-550015a4cbda.png" height="400">
 
 User manual verification by viewing uploaded image
-![image](https://user-images.githubusercontent.com/78611945/170863019-e227000b-13af-4502-8d5a-9afad0c55d47.png)
+ <img align="center" src="https://user-images.githubusercontent.com/78611945/170863019-e227000b-13af-4502-8d5a-9afad0c55d47.png" height="400">
 
 Another suspect image upload
-![image](https://user-images.githubusercontent.com/78611945/170863024-bfac2695-497a-4360-88b7-b61c3a5fd500.png)
+ <img align="center" src="https://user-images.githubusercontent.com/78611945/170863024-bfac2695-497a-4360-88b7-b61c3a5fd500.png" height="400">
 
 Match not found in our database
-![image](https://user-images.githubusercontent.com/78611945/170863027-96eb5d73-65a1-4a93-8fd6-cf46a110dadb.png)
+ <img align="center" src="https://user-images.githubusercontent.com/78611945/170863027-96eb5d73-65a1-4a93-8fd6-cf46a110dadb.png" height="400">
 
 
 ## Instructions to Run
